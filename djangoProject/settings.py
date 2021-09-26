@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import environ
 from pathlib import Path
 import os
 
@@ -21,19 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-env = environ.Env(
-    DEBUG=(bool, False)
-)
-
-environ.Env.read_env()
-DEBUG = env('DEBUG')
-SECRET_KEY = env('SECRET_KEY')
-
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'django-insecure-or3n6ickg&*ele81=6l^%&1_o)dgb9^6mvu=vmp(*6xmt39mjp'
+SECRET_KEY = 'django-insecure-or3n6ickg&*ele81=6l^%&1_o)dgb9^6mvu=vmp(*6xmt39mjp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
