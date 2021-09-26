@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=61ba2b30-b9a4-45c7-85ca-1f2e5fea9688&lang=ru_RU"
+            type="text/javascript"></script>
+    <title>let's gooo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <script>
+        {{script|safe}}
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="p-3 mb-2 bg-dark text-white">
+                    <h1>Карта безбилетников</h1>
+                    <div class="form-outline">
+                        <input type="search" id="form1" class="form-control" placeholder="Поиск маршрута"
+                        aria-label="Search" />
+                    </div>
+                </div>
+
+
+            <div class="dropdown m-2">
+                <button
+                    class="btn btn-primary dropdown-toggle"
+                    type="button"
+                    id="dropdownExampleAnimation"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                    data-mdb-dropdown-animation="off"
+                >
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownExampleAnimation">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="list-group" id="list-tab" role="tablist">
+      <a
+        class="list-group-item list-group-item-action active"
+        id="list-home-list"
+        data-mdb-toggle="list"
+        href="#list-home"
+        role="tab"
+        aria-controls="list-home"
+        >Home</a
+      >
+      <a
+        class="list-group-item list-group-item-action"
+        id="list-profile-list"
+        data-mdb-toggle="list"
+        href="#list-profile"
+        role="tab"
+        aria-controls="list-profile"
+        >Profile</a
+      >
+      <a
+        class="list-group-item list-group-item-action"
+        id="list-messages-list"
+        data-mdb-toggle="list"
+        href="#list-messages"
+        role="tab"
+        aria-controls="list-messages"
+        >Messages</a
+      >
+      <a
+        class="list-group-item list-group-item-action"
+        id="list-settings-list"
+        data-mdb-toggle="list"
+        href="#list-settings"
+        role="tab"
+        aria-controls="list-settings"
+        >Settings</a
+      >
+    </div>
+
+            </div>
+
+            <div class="col-8">
+                <div id="map" style="height: 900px"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
